@@ -63,27 +63,27 @@ export default function Signin() {
 
   return (
     <>
-    <div className='w-full h-[700px]'>
-        <form onSubmit={onSubmit} className='w-[700px] h-[680px] shadow-2xl border-[1px] border-gray m-auto text-center mt-[10px] bg-yellow-300'>
-            <h1 className='mt-[30px] text-[30px] font-semibold'>SIGIN_IN</h1>
+    <div className='w-full my-10 '>
+        <form onSubmit={onSubmit} className='w-[700px] shadow-2xl border-[1px] border-gray m-auto text-center mt-[10px] bg-gray-300 rounded-lg pb-10'>
+            <h1 className='mt-[30px] text-[30px] font-semibold'>Sign In</h1>
             
-            <input type='botton' placeholder='EmailAddress' className='border-2 w-[500px] h-14 text-[25px] mt-8'
+            <input type='text' placeholder='Email Address' className='border-2 w-[500px] py-2 px-2 text-[16px] mt-8 rounded-xl'
                            onChange={(e)=>setEmail(e.target.value)}></input>
 
-            <input type='password' placeholder='Password' className='mt-8 border-2 w-[500px] h-14 text-[25px]'
+            <input type='password' placeholder='Password' className='mt-8 border-2 w-[500px] p-2 text-[16px] rounded-xl'
              onChange={(e)=>setPassword(e.target.value)}></input>
-            <div className='flex justify-center ml-[10px]'>
+            <div className='flex justify-center ml-[10px] mt-2'>
                 <p className='text-[20px]'>Dont Have a Account/</p><Link to='/Signup' className='text-[20px] font-semibold'>Register</Link>
                 <Link to='/Forgotpassword' className='list-none  ml-[80px] text-[20px] space-x-4'>Forgot Password</Link>
             </div>
             
             
-            <button className='hover:bg-blue-600 bg-blue-400 w-[500px] h-8 mt-14 text-[25px] cursor-pointer 
+            <button className='hover:bg-blue-600 bg-blue-400 w-[500px] py-2 mt-14 text-[20px] rounded-3xl cursor-pointer 
                               justify-center flex items-center ml-[110px]'
                               
                               >
-                Singin</button>
-            <button className='hover:bg-red-600 bg-red-400 w-[500px] h-14 mt-14 text-[25px] cursor-pointer 
+                Sign In</button>
+            <button className='hover:bg-red-600 bg-red-400 w-[500px] py-2 mt-8 text-[20px] cursor-pointer  rounded-3xl
                               justify-center flex items-center ml-[110px]'
                               onClick={Auth}
                               >

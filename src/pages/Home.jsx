@@ -7,9 +7,9 @@ import Carousel from '../components/Carousel'
 
 
 const slides = [
-  "rolls-royce.webp",
-  "wedding-cars.webp",
-  "derice-jason.webp"
+  {path:"rolls-royce.webp",title:'Some Title'},
+  {path:"wedding-cars.webp",title:'Wedding Cars'},
+  {path:"derice-jason.webp",title:'Derise Luxury'}
 ]
 
 
@@ -55,7 +55,7 @@ export default function Home() {
       <Carousel autoSlide={true}>
         {
           slides.map((s)=>(
-            <img src={s} className='w-[100%]' />
+            <img src={s.path} className='w-[100%]' />
           ))
         }
       </Carousel>

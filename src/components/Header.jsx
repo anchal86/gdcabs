@@ -4,6 +4,7 @@ import {FiPhoneCall} from 'react-icons/fi'
 import {IoMdMenu} from 'react-icons/io'
 import {IoMdArrowDropdown} from 'react-icons/io' 
 import {useLocation,useNavigate} from 'react-router-dom' 
+import { useState } from 'react'
 
 
 export default function Header() {
@@ -25,14 +26,19 @@ export default function Header() {
     }
   }
 
+  const [scroll,setScroll] = useState(0)
   
+  window.addEventListener("scroll",()=>{
+    setScroll(window.scrollY)
+  })
 
 
 
 
   return (
+
     <>
-      <div className='w-full shadow-sm sticky  bg-[#073b4c] top-0 z-50  '>
+      <div className={`w-full shadow-sm fixed ${scroll<20? 'bg-opacity-0':'bg-opacity-90 bg-clip-padding blur-backdrop-filter'}  bg-[#073b4c] top-0 z-50  `}>
         <header  className='flex items-center max-w-6xl m-auto justify-between'>
             <div className=''>
                 <img src='https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-13-500x500.webp'

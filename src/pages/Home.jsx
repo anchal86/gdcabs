@@ -3,7 +3,14 @@ import React, { useState } from 'react'
 import {BsChevronLeft,BsChevronRight} from 'react-icons/bs'
 import { Navigate } from 'react-router'
 import {useLocation,useNavigate} from 'react-router-dom'
+import Carousel from '../components/Carousel'
 
+
+const slides = [
+  "rolls-royce.webp",
+  "wedding-cars.webp",
+  "derice-jason.webp"
+]
 
 
 export default function Home() {
@@ -18,15 +25,7 @@ export default function Home() {
   }
 
   
-    const slides=[
-      {url:'https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278__340.jpg'
-    },
-     {url:'https://cdn.pixabay.com/photo/2014/06/04/16/36/man-362150__340.jpg'},
-      {
-        url:'https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747__340.jpg'
-      },
-      {url:'./car9.jpg'},
-    ]
+   
     const slide=[
       {url:'covid-3.jpg', title:"dxjdfuidf"},
      {url:'https://cdn.pixabay.com/photo/2014/06/04/16/36/man-362150__340.jpg'},
@@ -52,22 +51,14 @@ export default function Home() {
     
   return (
     <>
-    <div className='w-full h-[700px] relative '>
-      <div style={{backgroundImage: `url(${slides[Currentstate].url})`}}
-       className='w-full h-full bg-center bg-cover duration-500'>
-       </div>
-
-  
-    
-    
-    <div className='absolute top-[50%] translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 text-white bg-black cursor-pointer'>
-    <BsChevronLeft onClick={prevslide} size={30} />
-      
-    </div>
-    <div className='absolute top-[47%] translate-x-0 translate-y-[-0%] right-5 rounded-full p-2 text-white bg-black cursor-pointer'>
-      <BsChevronRight onClick={nextslide} size={30}/>
-      
-    </div>
+    <div className=''>
+      <Carousel autoSlide={true}>
+        {
+          slides.map((s)=>(
+            <img src={s} className='w-[100%]' />
+          ))
+        }
+      </Carousel>
     </div>
     <div className=' h-auto '>
       <div className=' mt-[200px] text-center xm:text-[px] lg:text-[px]'>

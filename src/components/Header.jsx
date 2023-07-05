@@ -46,7 +46,7 @@ export default function Header() {
                />
             </div>
 
-            <div className=' xm:hidden lg:flex flex-wrap flex font-semibold '>
+            <div className=' xs:hidden lg:flex flex-wrap flex font-semibold '>
                 <ul id='btn' className=' flex  flex-wrap space-x-6 '>
                     <li className={`text-[#b1a374!important] cursor-pointer ${show('/')}`}
                      onClick={ ()=>navigate('/')}

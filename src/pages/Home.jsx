@@ -55,7 +55,9 @@ export default function Home() {
       <Carousel autoSlide={true}>
         {
           slides.map((s)=>(
+            <>
             <img src={s.path} className='w-[100%]' />
+            </>
           ))
         }
       </Carousel>

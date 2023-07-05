@@ -30,30 +30,28 @@ function App() {
     <>
     
     <Router>
-      <Header>
-        
+      <Header>  
       </Header>
       <Routes>
-      <Route path="/" element={<Home />}/>
-      
-      <Route path="/Categories" element={<Categories />}/>
-      <Route path="/Services" element={<Services />}/>
-      <Route path="/Signin" element={<Signin />}/>
-      <Route path="/Signup" element={<Signup />}/>
-      <Route path="/Agra" element={<Agra />}/>
-      <Route path="/Delhi" element={<Delhi />}/>
-      <Route path="/Jaipur" element={<Jaipur />}/>
-      <Route path="/Lucknow" element={<Lucknow />}/>
-      <Route path="/Forgotpassword" element={<Forgotpassword />}/>
-      <Route path="/Brands" element={<Brands />}/>
-      <Route path="/View" element={<View />}/>
-      <Route path="/About" element={<About />}/>
-      <Route path="/Locations" element={<Locations />}/>
-      <Route path="/Support" element={<Support />}/>
-      <Route path="/Contact" element={<Contact />}/>
-      <Route path="/Terms" element={<Tearms />}/>
-      <Route path="/Wedding" element={<Wedding />}/>
-      
+        <Route path="/" element={<Home />}/>  
+        <Route path="/Categories" element={<Categories />}/>
+        <Route path="/Services" element={<Services />}/>
+        <Route path="/Signin" element={<Signin />}/>
+        <Route path="/Signup" element={<Signup />}/>
+        <Route path="/Agra" element={<Agra />}/>
+        <Route path="/Delhi" element={<Delhi />}/>
+        <Route path="/Jaipur" element={<Jaipur />}/>
+        <Route path="/Lucknow" element={<Lucknow />}/>
+        <Route path="/Forgotpassword" element={<Forgotpassword />}/>
+        <Route path="/Brands" element={<Brands />}/>
+        <Route path="/View" element={<View />}/>
+        <Route path="/About" element={<About />}/>
+        <Route path="/Locations" element={<Locations />}/>
+        <Route path="/Support" element={<Support />}/>
+        <Route path="/Contact" element={<Contact />}/>
+        <Route path="/Terms" element={<Tearms />}/>
+        <Route path="/Wedding" element={<Wedding />}/>
+        
       </Routes>
 
       <Footer/>

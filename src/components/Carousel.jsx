@@ -22,6 +22,7 @@ const Carousel = ({children: slides,autoSlide=false,autoSlideInterval=3000}) => 
             <button onClick={prev} className='ml-2 p-1 rounded-full shadow bg-white-80 text-gray-800 hover:bg-white'>
                 <BsChevronLeft size={40} />
             </button>
+            
             <button onClick={next} className='mr-2 p-1 rounded-full shadow bg-white-80 text-gray-800 hover:bg-white'>
                 <BsChevronRight  size={40} />
             </button>

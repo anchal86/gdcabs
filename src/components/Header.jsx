@@ -127,7 +127,7 @@ export default function Header() {
             </div>
 
 
-            <div className=' flex space-x-8 '>
+            <div className='xs:hidden lg:flex space-x-8 '>
               <div className='flex justify-center  rounded-full bg-white hover:bg-gray-200 border-2 py-1 px-6 text-[16px] '>
               <li className={`cursor-pointer flex items-center  ${show('/Signin') && 'text-black border-b-red-600'}
                 `}

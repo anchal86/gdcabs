@@ -38,7 +38,7 @@ export default function Header() {
   return (
 
     <>
-      <div className={`w-full shadow-sm fixed ${scroll<20? 'bg-opacity-0':'bg-opacity-90 bg-clip-padding blur-backdrop-filter'}  bg-[#073b4c] top-0 z-50  `}>
+      <div className={`w-full shadow-sm fixed ${scroll<20? 'bg-opacity-100':'bg-opacity-90 bg-clip-padding blur-backdrop-filter'}  bg-[#073b4c] top-0 z-50  `}>
         <header  className='flex items-center max-w-6xl m-auto justify-between'>
             <div className=''>
                 <img src='https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-13-500x500.webp'
